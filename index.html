@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script  src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="top-dash">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+            <p>Dashboard</p>
+        </div>
+        <div class="nav">
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-account</title><path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75M12,15C13.5,15 16.5,15.75 16.5,17.25V18H7.5V17.25C7.5,15.75 10.5,15 12,15Z" /></svg>Home</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>Profile</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message</title><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg>Messages</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>history</title><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>History</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>folder</title><path d="M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z" /></svg>Tasks</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-group</title><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/></svg>Communities</button>
+        </div> 
+        <div class="options">
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>Settings</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>help</title><path d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z" /></svg>Support</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shield</title><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" /></svg>Privacy</button>
+        </div>
+        
+    </div>
+    <div class="header">
+        <div class="header-search">
+            <svg class="hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+            <input placeholder="search">
+        </div>
+        <div class="header-profile">
+            <svg class="hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+            <img class="pfp1 hover" src="https://cdn.dribbble.com/users/383277/screenshots/18055765/media/e5fc935b60035305099554810357012a.png?compress=1&resize=400x300">
+            <strong class="hover">Neon Skeleton</strong>
+        </div>
+        <div class="header-account">
+            <img class="pfp2" src="https://cdn.dribbble.com/users/383277/screenshots/18055765/media/e5fc935b60035305099554810357012a.png?compress=1&resize=400x300">
+            <div>
+                <p>Hi there,</p>
+                <strong>Neon Skeleton (@NeoSke)</strong>
+            </div>
+        </div>
+        <div class="header-options">
+            <button class="hover">New</button>
+            <button class="hover">Upload</button>
+            <button class="hover">Share</button>
+        </div>
+    </div>
+    <div class="content-container">
+        <h2 id="projects">Your Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h2>First Project</h2>
+                <p>jfkdj fjksj f jskj jsdkj ksdj</p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Second Project</h2>
+                <p>fkdjkj jfkjsdj dksjdkjs kjdk sjdkj sj </p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Third Project</h2>
+                <p>KJFDJKFJ UKDJS JDSJjds fd fjdkfkdjf</p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Fourth Project</h2>
+                <p>fjdjk dsjkfjdjsk io moe ksj dskdjshdofdhs fhuiefsd iojfjdsio fnue9if</p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Fifth Project</h2>
+                <p>fdk ds, jkd m48 euds7f8d d6d877sd8 s7d8 sd umsj</p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Last Project</h2>
+                <p>kdf dkskdlk sldk slk dlsk dlskd ksldklslddslk</p>
+                <div class="buttons">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-plus</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg></button>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>share-all</title><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></svg></button>
+                </div>
+            </div>
+        </div>
+        <h2 id="announcements">Announcements</h2>
+        <div class="announcements">
+            <div class="announcement">
+                <h3>Site Maintenance</h3>
+                <p> fdfsd klsdkls kld kdls kdlk sldk lskd lks </p>
+            </div>
+            <div class="announcement">
+                <h3>Community Share Day</h3>
+                <p>djksjks dks ksl kdsj fkdjkf dkfjkdjf kdjfk djkf jdkjf kj</p>
+            </div>
+            <div class="announcement">
+                <h3>Updated Privacy Policy</h3>
+                <p>ldksk kdlsk dlsdkl skd ksl dksl dkldksldk lsk</p>
+            </div>
+        </div>
+        <h2 id="trending">Trending</h2>
+        <div class="trending">
+            <div class="trend">
+                <img src="data:image/jpeg;base64,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" >
+                <div>
+                    <h3>@tegan</h3>
+                    <p>World Place Builder</p>
+                </div>
+            </div>
+            <div class="trend">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpcCcQNUGyTpt1jjsWPZVrdEvPHO3kr7Tdg&usqp=CAU">
+                <div>
+                    <h3>@morgan</h3>
+                    <p>Super Cool Project</p>
+                </div>
+            </div>
+            <div class="trend">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6_3LEQ3Mt1Or0Zx53Yoyi-5qzZ55DdxVng&usqp=CAU">
+                <div>
+                    <h3>@kendall</h3>
+                    <p>Life Changing App</p>
+                </div>
+            </div>
+            <div class="trend">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVkhLkPoA1nX_KXMEC2FHkQeerMNmqIiiiYA&usqp=CAU" >
+                <div>
+                    <h3>@alex</h3>
+                    <p>No Traffic Maker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
